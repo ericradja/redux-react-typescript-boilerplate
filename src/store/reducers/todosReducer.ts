@@ -1,6 +1,9 @@
+export const ADD_TODO_ACTION = "ADD_TODO_ACTION";
+export const UPDATE_TODO_ACTION = "UPDATE_TODO_ACTION";
+
 export interface Action {
-  type: "ADD_TODO_ACTION" | "UPDATE_TODO_ACTION";
-  payload: any;
+  type: string;
+  payload: Todo;
 }
 
 export interface Todo {
@@ -15,10 +18,21 @@ const initialState: Todo[] = [
   { id: 2, title: "Aze 2", completed: true },
 ];
 
-export const todosReducer = (state: Todo[] = initialState, action: Action) => {
+export const todosReducer = (
+  state: Todo[] = initialState,
+  action: Action
+): Todo[] => {
   switch (action.type) {
     case "ADD_TODO_ACTION":
-      return [...state, { id: ++id, completed: false, ...action.payload }];
+      return [...state, { ...action.payload, id: ++id, completed: false }];
+    case "UPDATE_TODO_ACTION":
+      return state.map((todo) => {
+        if (todo.id === action.payload.id) {
+          return { ...todo, ...action.payload };
+        } else {
+          return todo;
+        }
+      });
     default:
       return state;
   }
