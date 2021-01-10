@@ -10,7 +10,8 @@
   "keywords": [
     "Redux",
     "React",
-    "Typescript"
+    "Typescript",
+    "Boilerplate"
   ],
   "description": "Redux setup with React and Typescript",
   "repository": {
