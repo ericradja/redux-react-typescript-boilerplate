@@ -6,10 +6,13 @@ import {
   UPDATE_TODO_ACTION,
 } from "../types";
 
-let id = 2;
+let id = 5;
 const initialTodos: Todo[] = [
-  { id: 1, title: "Aze", completed: false },
-  { id: 2, title: "Aze 2", completed: false },
+  { id: 1, title: "Aller au cinéma", completed: false },
+  { id: 2, title: "Aller à l'intreinement", completed: false },
+  { id: 3, title: "Manger", completed: false },
+  { id: 4, title: "Coder", completed: false },
+  { id: 5, title: "Dormir", completed: false },
 ];
 
 // const initialState: TodoState = { todos: initialTodos, filter: null };
