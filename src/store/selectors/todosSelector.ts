@@ -1,3 +1,3 @@
-import { Todo } from "../reducers/todosReducer";
+import { Todo, TodoState } from "../types";
 
-export const todosSelector = (state: { todos: Todo[] }) => state.todos;
+export const todosSelector = (state: TodoState): Todo[] => state.todos;
