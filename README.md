@@ -3,10 +3,10 @@
 This project is inspired by [Grafikart](https://www.grafikart.fr)'s tutorial on [Redux](https://redux.js.org/).
 <br/>
 
-Here is the link: [ttps://www.grafikart.fr/tutoriels/redux-react-state-1357](https://www.grafikart.fr/tutoriels/redux-react-state-1357)
+Here is the link: [https://www.grafikart.fr/tutoriels/redux-react-state-1357](https://www.grafikart.fr/tutoriels/redux-react-state-1357)
 <br/>
 
-Thanks [Grafikart](https://www.grafikart.fr)!
+Thanks [Grafikart](https://www.grafikart.fr) !
 <br/>
 
 ## Available Scripts

@@ -1,7 +1,26 @@
 {
-  "name": "redux-tutorial",
+  "name": "redux-react-typescript-boilerplate",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
+  "author": {
+    "name": "Eric Rajaonarison",
+    "email": "eric.raj12@gmail.com"
+  },
+  "license": "MIT",
+  "keywords": [
+    "Redux",
+    "React",
+    "Typescript"
+  ],
+  "description": "Redux setup with React and Typescript",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ericradja/redux-react-typescript-boilerplate.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ericradja/redux-react-typescript-boilerplate/issues"
+  },
+  "homepage": "https://github.com/ericradja/redux-react-typescript-boilerplate#readme",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
