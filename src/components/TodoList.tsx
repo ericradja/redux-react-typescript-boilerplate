@@ -5,7 +5,6 @@ import {
   toggleTodoAction,
 } from "../store/actions/todosActions";
 import { filteredTodosSelector } from "../store/selectors/filterSelector";
-import { todosSelector } from "../store/selectors/todosSelector";
 import { Todo } from "../store/types";
 
 interface TodoProps {
@@ -65,8 +64,6 @@ export const TodoList: React.FC<TodoListProps> = ({
 export const TodoListStore: React.FC = () => {
   const todos = useSelector(filteredTodosSelector);
   const dispatch = useDispatch();
-
-  console.log("todos :>> ", todos);
 
   const onToggle = React.useCallback(
     (todo: Todo) => {
